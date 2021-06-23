@@ -140,29 +140,33 @@ export default function Index() {
                       <Progress
                         name="Javascript/Css/Html"
                         percent={92}
-                        color="green"
+                        color="bg-green-500"
                       />
                       <Progress
                         name="React/NextJs/GatsbyJs"
                         percent={80}
-                        color="blue"
+                        color="bg-blue-500"
                       />
                       <Progress
                         name="NodeJs/HapiJs/KoaJs"
                         percent={70}
-                        color="yellow"
+                        color="bg-yellow-500"
                       />
                       <Progress
                         name="MySQL/PoestgreSQL/Redis/MongoDB"
                         percent={60}
-                        color="red"
+                        color="bg-red-500"
                       />
                       <Progress
                         name="Git/SVN,Slack/MicroSoft Team"
                         percent={90}
-                        color="green"
+                        color="bg-green-500"
                       />
-                      <Progress name="Docker/Linux/" percent={60} color="red" />
+                      <Progress
+                        name="Docker/Linux/"
+                        percent={60}
+                        color="bg-red-500"
+                      />
                     </div>
                   </Box>
                 </div>
@@ -172,25 +176,25 @@ export default function Index() {
                   Icon={BriefcaseIcon}
                   number={99}
                   text="projects completed"
-                  color="green"
+                  color="text-green-500"
                 />
                 <Number
                   Icon={UserGroupIcon}
                   number={199}
                   text="Satisfied clients"
-                  color="blue"
+                  color="text-blue-500"
                 />
                 <Number
                   Icon={TrendingUpIcon}
                   number={234}
                   text="Cilents Benefit up"
-                  color="red"
+                  color="text-red-500"
                 />
                 <Number
                   Icon={StarIcon}
                   number={99}
                   text="Nominees winner"
-                  color="yellow"
+                  color="text-yellow-500"
                 />
               </div>
             </div>
@@ -211,7 +215,8 @@ export default function Index() {
                         time={item.time}
                         title={item.school}
                         Icon={AcademicCapIcon}
-                        color="red"
+                        iconcolor="text-green-500"
+                        dividercolor="border-green-500"
                       >
                         <p className=" text-gray-600">{item.info}</p>
                       </Step>
@@ -226,7 +231,8 @@ export default function Index() {
                         time={item.startDate + "から" + item.endDate + "まで"}
                         title={item.company}
                         Icon={BriefcaseIcon}
-                        color="blue"
+                        iconcolor="text-blue-500"
+                        dividercolor="border-blue-500"
                       >
                         <p className="text-gray-600">
                           タイプ: {item.employmentType}
