@@ -29,7 +29,7 @@ function SiderBar({ Context }) {
           className="h-9 text-white mr-4 cursor-pointer lg:hidden"
           onClick={iconOpen}
         />
-        <h1 className="text-white text-2xl font-bold lg:mb-1">趙一航</h1>
+        <h1 className="text-white text-2xl font-bold mr-4 lg:mb-1">趙一航</h1>
         <h2 className="text-white text-xl font-bold lg:mb-32">
           チヨウ　イチコウ
         </h2>

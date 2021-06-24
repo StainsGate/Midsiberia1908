@@ -77,6 +77,16 @@ export default function Index() {
     contact: contactRef,
   });
 
+  const handleClickMore = (e) => {
+    e.target.href = "/resume.xlsx";
+    e.target.download = "履历书_趙一航";
+  };
+
+  const handleClickDownload = (e) => {
+    e.target.href = "/skill.xlsx";
+    e.target.download = "スキルシート_趙一航";
+  };
+
   return (
     <div>
       <Head>
@@ -107,9 +117,12 @@ export default function Index() {
                   はバックエンドの開発もできる！{" "}
                 </p>
               </TextLoop>
-              <button className=" w-36 h-10 rounded-3xl bg-red-500 text-white font-bold transition duration-500 ease-in-out  transform  hover:-translate-y-1 hover:scale-110 ">
+              <a
+                className=" w-36 h-10 rounded-3xl cursor-pointer text-center p-2 bg-red-500 text-white font-bold transition duration-500 ease-in-out  transform  hover:-translate-y-1 hover:scale-110 "
+                onClick={handleClickMore}
+              >
                 もっと知る
-              </button>
+              </a>
               <div className=" flex flex-col justify-center absolute bottom-9">
                 <span className="text-white mb-4">スクロール</span>
                 <ChevronDoubleDownIcon className="h-9 text-white animate-bounce" />
@@ -131,10 +144,13 @@ export default function Index() {
                   <Box>
                     <div className="md:flex md:flex-col md: justify-between">
                       <p className="mb-4">{info.self_introduce}</p>
-                      <button className="flex justify-center items-center w-36 h-10 rounded-3xl bg-red-500 text-white font-bold transition duration-500 ease-in-out  transform  hover:-translate-y-1  hover:scale-110">
+                      <a
+                        className="flex justify-center items-center w-36 h-10 rounded-3xl bg-red-500 text-white font-bold transition duration-500 ease-in-out  transform  hover:-translate-y-1  hover:scale-110"
+                        onClick={handleClickDownload}
+                      >
                         <DownloadIcon className="h-6 mr-1 animate-bounce" />
                         Download
-                      </button>
+                      </a>
                     </div>
                     <div>
                       <Progress
