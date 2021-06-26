@@ -145,7 +145,7 @@ export default function Index() {
                     <div className="md:flex md:flex-col md: justify-between">
                       <p className="mb-4">{info.self_introduce}</p>
                       <a
-                        className="flex justify-center items-center w-36 h-10 rounded-3xl bg-red-500 text-white font-bold transition duration-500 ease-in-out  transform  hover:-translate-y-1  hover:scale-110"
+                        className="flex justify-center items-center  cursor-pointer w-36 h-10 rounded-3xl bg-red-500 text-white font-bold transition duration-500 ease-in-out  transform  hover:-translate-y-1  hover:scale-110"
                         onClick={handleClickDownload}
                       >
                         <DownloadIcon className="h-6 mr-1 animate-bounce" />
@@ -331,6 +331,7 @@ export default function Index() {
                     like={blog.like}
                     tags={blog.tags}
                     description={blog.descriptions}
+                    to="https://yihang-blog.netlify.app/"
                   />
                 );
               })}

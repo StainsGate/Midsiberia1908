@@ -1,6 +1,13 @@
 import { HeartIcon, TagIcon } from "@heroicons/react/outline";
+import { useRouter } from "next/router";
 
-function BlogCard({ title, cover, description, time, author, like, tags }) {
+function BlogCard({ title, cover, description, time, author, like, tags, to }) {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push(to);
+  };
+
   return (
     <div className="h-80 shadow-lg rounded-lg md:flex mb-4">
       <img
@@ -37,7 +44,10 @@ function BlogCard({ title, cover, description, time, author, like, tags }) {
             );
           })}
         </div>
-        <button className=" absolute bottom-4 right-4 border border-blue-400 p-1 rounded-lg capitalize text-sm md:text-lg hover:text-white hover:bg-blue-400">
+        <button
+          className=" absolute bottom-4 right-4 border border-blue-400 p-1 rounded-lg capitalize text-sm md:text-lg hover:text-white hover:bg-blue-400"
+          onClick={handleClick}
+        >
           read more
         </button>
       </div>
