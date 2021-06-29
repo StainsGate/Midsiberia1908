@@ -50,35 +50,34 @@ export const info = {
   expericens: [
     {
       id: "g",
-      company: "柳州長虹精密機械製造会社",
+      company: "XXXXXXX会社",
       startDate: "2015-07",
       endDate: "2019-02",
-      employmentType: "社員 Software Developer",
-      location: "柳州 中国",
-      descriptions:
-        "社内SEどして、ソフトウェアの開発。主にweb系のプロジェクト。",
+      employmentType: "Software Developer",
+      location: "日本",
+      descriptions: "ソフトウェアの開発。主にweb系のプロジェクト。",
     },
     {
       id: "r",
-      company: "マイケルコース",
+      company: "XXXXXXX会社",
       startDate: "2019-12",
       endDate: "2020-04",
-      employmentType: "派遣",
+      employmentType: "software Developer",
       location: "酒々井, 日本",
-      descriptions: "商品の包装 、販売、通訳 その他付随業務",
+      descriptions: "开发",
     },
     {
       id: "a",
       //会社名
-      company: "マルハミート",
+      company: "XXXXXXX会社",
       startDate: "2020-11",
       endDate: "2021-06",
       //タイプ
-      employmentType: "派遣",
+      employmentType: "software Developer",
       //場所
       location: "川崎, 日本",
       //役目
-      descriptions: "作業、通訳 その他付随業務",
+      descriptions: "开发",
     },
   ],
   blogs: [
