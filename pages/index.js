@@ -119,7 +119,7 @@ export default function Index() {
               </TextLoop>
               <a
                 className=" w-36 h-10 rounded-3xl cursor-pointer text-center p-2 bg-red-500 text-white font-bold transition duration-500 ease-in-out  transform  hover:-translate-y-1 hover:scale-110 "
-                onClick={handleClickMore}
+                // onClick={handleClickMore}
               >
                 もっと知る
               </a>
@@ -146,7 +146,7 @@ export default function Index() {
                       <p className="mb-4">{info.self_introduce}</p>
                       <a
                         className="flex justify-center items-center  cursor-pointer w-36 h-10 rounded-3xl bg-red-500 text-white font-bold transition duration-500 ease-in-out  transform  hover:-translate-y-1  hover:scale-110"
-                        onClick={handleClickDownload}
+                        // onClick={handleClickDownload}
                       >
                         <DownloadIcon className="h-6 mr-1 animate-bounce" />
                         Download
